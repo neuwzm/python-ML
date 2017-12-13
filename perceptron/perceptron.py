@@ -334,3 +334,4 @@ class AdalineSGD(object):
  plt.ylabel('Average Cost')
  plt.show()
 
+
