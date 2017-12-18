@@ -19,6 +19,8 @@ print(X)
  X_test_std = sc.transform(X_test)
 
 
+#Perceptron
+
  from sklearn.linear_model import Perceptron
  ppn = Perceptron(n_iter=40, eta0=0.1, random_state=0)
  ppn.fit(X_train_std, y_train)
@@ -95,6 +97,8 @@ print('Misclassified samples: %d' % (y_test != y_pred).sum())
     plt.ylabel('$\phi (z)$')
     plt.show()
 
+
+#LogisticRegression
 
        from sklearn.linear_model import LogisticRegression
     lr = LogisticRegression(C=1000.0, random_state=0)
