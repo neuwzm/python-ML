@@ -147,4 +147,13 @@ plt.show()
 
 
 
+# SGDClassifier
+# when data is too large to load to memory use SGDClassifier
+from sklearn.linear_model import SGDClassifier
+ppn = SGDClassifier(loss='perceptron')
+lr = SGDClassifier(loss='log')
+svm = SGDClassifier(loss='hinge')
+
+
+
 
